@@ -7,6 +7,8 @@ import { AnimatePresence, motion } from "framer-motion"
 const PopupLayout = () => {
     const { state } = usePopup()
 
+    if (!("children" in state)) return null
+
     return (
         <AnimatePresence>
             {state.isShow && (

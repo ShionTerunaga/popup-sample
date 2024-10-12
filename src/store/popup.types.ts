@@ -1,20 +1,26 @@
 import { Dispatch, ReactNode } from "react"
 
-type noneChildren = {
-    isShow: boolean
+type closeState = {
+    isShow: false
 }
 
-type hasChildren = {
-    isShow: boolean
+type openState = {
+    isShow: true
     children: ReactNode
 }
 
-export type popupState = noneChildren | hasChildren
+export type popupState = closeState | openState
 
-export type popupAction = {
-    type: "show" | "hide"
-    children?: ReactNode
+type closeAction = {
+    type: "hide"
 }
+
+type openAction = {
+    type: "show"
+    children: ReactNode
+}
+
+export type popupAction = closeAction | openAction
 
 export type popupContextType = {
     state: popupState

@@ -5,14 +5,14 @@ export const popupReducer = (
     popupAction: popupAction
 ): popupState => {
     switch (popupAction.type) {
+        case "hide":
+            return {
+                isShow: false
+            }
         case "show":
             return {
                 isShow: true,
                 children: popupAction.children
-            }
-        case "hide":
-            return {
-                isShow: false
             }
         default:
             return {
