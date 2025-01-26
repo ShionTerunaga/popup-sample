@@ -2,12 +2,10 @@
 
 import { usePopup } from "@/hooks/popup"
 import styles from "./style.css"
-import { AnimatePresence, motion } from "framer-motion"
+import { AnimatePresence, motion } from "motion/react"
 
 const PopupLayout = () => {
     const { state } = usePopup()
-
-    if (!("children" in state)) return null
 
     return (
         <AnimatePresence>

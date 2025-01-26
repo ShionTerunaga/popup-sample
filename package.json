@@ -1,27 +1,27 @@
 {
-  "name": "popup-sample",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@vanilla-extract/css": "^1.15.5",
-    "@vanilla-extract/next-plugin": "^2.4.5",
-    "framer-motion": "^11.9.0",
-    "next": "14.2.13",
-    "react": "^18",
-    "react-dom": "^18"
-  },
-  "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.13",
-    "typescript": "^5"
-  }
+    "name": "popup-sample",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "@vanilla-extract/css": "^1.15.5",
+        "@vanilla-extract/next-plugin": "^2.4.5",
+        "motion": "^12.0.5",
+        "next": "15.1.6",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0"
+    },
+    "devDependencies": {
+        "@types/node": "^20",
+        "@types/react": "^19.0.8",
+        "@types/react-dom": "^19.0.3",
+        "eslint": "^8",
+        "eslint-config-next": "14.2.13",
+        "typescript": "^5"
+    }
 }

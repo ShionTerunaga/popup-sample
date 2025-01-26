@@ -14,9 +14,9 @@ export const PopupProvider = (props: props) => {
     const [state, dispatch] = useReducer(popupReducer, popupInitialState)
 
     return (
-        <PopupContext.Provider value={{ state, dispatch }}>
+        <PopupContext value={{ state, dispatch }}>
             <PopupLayout />
             {props.children}
-        </PopupContext.Provider>
+        </PopupContext>
     )
 }
