@@ -2,6 +2,7 @@ import { PopupCloseButton } from "@/components/popup-close-button"
 import styles from "./style.css"
 
 export const Sample2 = () => {
+    console.log("お腹すいた。ラーメン食べたい🍜")
     return (
         <div className={styles.container}>
             <div className={styles.box}>
