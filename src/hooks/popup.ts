@@ -1,8 +1,8 @@
-import { PopupContext } from "@/store/popup-context"
-import { ReactNode, useContext } from "react"
+import { usePopupContext } from "@/store/popup-context"
+import { ReactNode } from "react"
 
 export const usePopup = () => {
-    const { state, dispatch } = useContext(PopupContext)
+    const { state, dispatch } = usePopupContext()
 
     /** popupを閉じる */
     const closePopup = () => {
